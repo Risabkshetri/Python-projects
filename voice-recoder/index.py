@@ -1,3 +1,4 @@
+
 # import required libraries
 import sounddevice as sd
 from scipy.io.wavfile import write
@@ -14,8 +15,6 @@ def countdown(seconds):
 
 
 freq = 44100
-
-
 duration = 5
 
 # Start recorder with the given values 
@@ -33,4 +32,4 @@ print("Audio recording completed!")
 write("recording0.wav", freq, recording)
 
 # Convert the NumPy array to audio file
-wv.write("recording1.wav", recording, freq, sampwidth=2)
+# wv.write("recording1.wav", recording, freq, sampwidth=2)
